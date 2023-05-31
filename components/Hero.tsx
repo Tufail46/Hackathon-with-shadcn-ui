@@ -5,7 +5,7 @@ import { ShoppingCart } from "lucide-react";
 export default function Hero() {
   return (
     <section>
-      <div className="max-w-[1240px] w-full h-screen flex flex-col lg:flex-row justify-between mx-auto">
+      <div className="max-w-[1240px] w-full flex flex-col lg:flex-row justify-between mx-auto mb-20">
         <div className="m-8 lg:m-1">
           <p className="my-10 px-5 py-2  font-bold text-[#2118FF]">Sale 70%</p>
           <h1 className="scroll-m-20 text-5xl font-bold lg:text-6xl tracking-wide">

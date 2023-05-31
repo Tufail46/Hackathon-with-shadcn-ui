@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export default function Promotions() {
   return (
-    <section className="max-w-[1240px] w-full h-screen mx-auto mt-12 lg:mt-6">
+    <div className="max-w-[1240px] w-full mx-auto my-20 lg:mt-6">
       <div className="m-8 lg:m-1">
         <p className="text-center uppercase tracking-wide text-[#2118FF]">
           Promotions
@@ -12,9 +12,9 @@ export default function Promotions() {
         <h2 className="scroll-m-20 pb-2 text-3xl font-bold text-center my-4 tracking-wide first:mt-0">
           Our Promotions Event
         </h2>
-        <div className="grid lg:grid-cols-4 gap-6 h-96">
-          <div className="lg:col-span-2">
-            <div className="bg-[#D6D6D8] h-44 mb-8 flex justify-around items-center">
+        <div className="grid lg:grid-cols-4 gap-6">
+          <div className="md:col-span-2">
+            <div className="bg-[#D6D6D8] mb-8 flex justify-around items-center">
               <div className="">
                 <p className="text-3xl font-bold ml-4 lg:ml-0">GET UP TO 60%</p>
                 <p className="text-xl ml-4 lg:ml-0">For the summer season</p>
@@ -53,6 +53,6 @@ export default function Promotions() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
