@@ -11,41 +11,52 @@ export default function Unique() {
           </h2>
         </div>
         <div className="grid lg:grid-cols-4 gap-12">
-          <div className="md:col-span-2 flex justify-around">
-            <div>
-              <div className="m-4 lg:m-8">
-                <h3 className="text-xl font-bold my-4">
-                  Using Good Quality Materials
-                </h3>
-                <p className="text-md mb-6">
-                  Lorem ipsum dolor sit amt, consectetur adipiscing elit
+          <div className="md:col-span-2">
+            <div className="relative z-10">
+              <div className="absolute -z-20">
+                <p className="text-8xl lg:text-9xl tracking-tighter font-extrabold text-[#F2F3F7]">
+                  Different from Others
                 </p>
               </div>
-              <div className="m-4 lg:m-8">
-                <h3 className="text-xl font-bold my-4">
-                  Modern Fashion Design
-                </h3>
-                <p className="text-md">
-                  Lorem ipsum dolor sit amt, consectetur adipiscing elit
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="m-4 lg:m-8">
-                <h3 className="text-xl font-bold my-4">
-                  100% Handmade Products
-                </h3>
-                <p className="text-md mb-6">
-                  Lorem ipsum dolor sit amt, consectetur adipiscing elit
-                </p>
-              </div>
-              <div className="m-4 lg:m-8">
-                <h3 className="text-xl font-bold my-4">
-                  Discount for Bulk Orders
-                </h3>
-                <p className="text-md">
-                  Lorem ipsum dolor sit amt, consectetur adipiscing elit
-                </p>
+              <div>
+                <div className="flex justify-around">
+                  <div>
+                    <div className="m-4 lg:m-8">
+                      <h3 className="text-xl font-bold my-4">
+                        Using Good Quality Materials
+                      </h3>
+                      <p className="text-md mb-6">
+                        Lorem ipsum dolor sit amt, consectetur adipiscing elit
+                      </p>
+                    </div>
+                    <div className="m-4 lg:m-8">
+                      <h3 className="text-xl font-bold my-4">
+                        Modern Fashion Design
+                      </h3>
+                      <p className="text-md">
+                        Lorem ipsum dolor sit amt, consectetur adipiscing elit
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="m-4 lg:m-8">
+                      <h3 className="text-xl font-bold my-4">
+                        100% Handmade Products
+                      </h3>
+                      <p className="text-md mb-6">
+                        Lorem ipsum dolor sit amt, consectetur adipiscing elit
+                      </p>
+                    </div>
+                    <div className="m-4 lg:m-8">
+                      <h3 className="text-xl font-bold my-4">
+                        Discount for Bulk Orders
+                      </h3>
+                      <p className="text-md">
+                        Lorem ipsum dolor sit amt, consectetur adipiscing elit
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

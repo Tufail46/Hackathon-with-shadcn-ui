@@ -25,7 +25,7 @@ export default function Hero() {
             <Image src={"/Featured4.webp"} alt={"/"} width={120} height={120} />
           </div>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block bg-[#FBECE2] rounded-full">
           <Image src={"/header.webp"} alt="Header" width={1200} height={1200} />
         </div>
       </div>
