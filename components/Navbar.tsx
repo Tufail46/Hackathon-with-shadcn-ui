@@ -70,8 +70,13 @@ const Navbar = () => {
             className="rounded-xl w-96"
           />
         </div>
-        <div className="hidden lg:block">
-          <ShoppingCart />
+        <div className="relative hidden lg:block">
+          <div className="absolute bg-red-500 rounded-full text-red px-2 py-1 text-xs -top-2 left-5 text-white">
+            0
+          </div>
+          <div className="bg-[#F1F1F1] rounded-full p-2">
+            <ShoppingCart />
+          </div>
         </div>
         <div onClick={handleNav} className="lg:hidden cursor-pointer">
           <AiOutlineMenu size={25} />
