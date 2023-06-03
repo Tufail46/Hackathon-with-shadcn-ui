@@ -108,9 +108,14 @@ const Navbar = () => {
           <div className="py-28 flex flex-col items-center text-center">
             <ul>
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm pl-6">
-                  <ShoppingCart />
-                </li>
+                <div className="relative">
+                  <div className="absolute bg-red-500 rounded-full text-red px-2 py-1 text-xs -top-2 left-11 text-white">
+                    0
+                  </div>
+                  <div className="bg-[#F1F1F1] p-2 rounded-full text-center mx-6">
+                    <ShoppingCart />
+                  </div>
+                </div>
               </Link>
               <Link href="/female">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">

@@ -7,11 +7,13 @@ export default function Hero() {
     <section>
       <div className="max-w-[1240px] w-full flex flex-col lg:flex-row justify-between mx-auto mb-20">
         <div className="m-8 lg:m-1">
-          <p className="my-10 px-5 py-2  font-bold text-[#2118FF]">Sale 70%</p>
+          <p className="my-10 px-5 py-2 bg-[#E1EDFF] w-28 font-bold text-[#2118FF]">
+            Sale 70%
+          </p>
           <h1 className="scroll-m-20 text-5xl font-bold lg:text-6xl tracking-wide">
             An Industrial Take on Streetwear
           </h1>
-          <p className="leading-7 [&:not(:first-child)]:mt-8 mb-8 text-md">
+          <p className="leading-7 [&:not(:first-child)]:mt-8 mb-8 text-md md:pr-6">
             Anyone can beat you but no one can beat your outfit as long as you
             wear Dine outfits.
           </p>
