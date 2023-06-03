@@ -99,15 +99,11 @@ export default function Footer() {
               </div>
               <div className="text-[#666674] text-xl my-2 lg:my-4">
                 Design by.{" "}
-                <span className="text-black font-bold">
-                  Weird Design Studio
-                </span>
+                <span className="text-black font-bold">PanaCloud</span>
               </div>
               <div className="text-[#666674] text-xl my-2 lg:my-4">
                 Code by.{" "}
-                <span className="text-black font-bold">
-                  shabrina12 on github
-                </span>
+                <span className="text-black font-bold">Muhammad Tufail</span>
               </div>
             </div>
           </div>
