@@ -12,7 +12,7 @@ export default function NewsLetter() {
               Newsletter
             </p>
           </div>
-          <div className=" absolute -top-10 md:top-1 inset-0">
+          <div className=" absolute -top-1 md:top-1 inset-0">
             <h2 className="scroll-m-20 pb-2 text-3xl font-bold md:my-2 tracking-wide first:mt-0">
               Subscribe Our Newsletter
             </h2>
