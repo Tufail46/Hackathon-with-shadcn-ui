@@ -37,7 +37,7 @@ export default async function page() {
     <div className="max-w-[1240px] w-full mx-auto">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
         {data.map((item) => (
-          <div className="m-8">
+          <div key={item._id} className="m-8">
             <Image
               width={300}
               height={300}
