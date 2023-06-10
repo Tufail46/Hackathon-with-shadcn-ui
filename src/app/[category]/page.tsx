@@ -3,19 +3,38 @@ import { client } from "@/lib/sanityClient";
 import { Image as IImage } from "sanity";
 import { urlForImage } from "../../../sanity/lib/image";
 
-const getProductData = async () => {
-  const res = await client.fetch(`*[_type=="products"]{
-    price,
-    _id,
-    title,
-    image,
-    subtitle,
-    category -> {
+const getProducts = async ({ params }: { params: { category: string } }) => {
+  const str = params.category;
+  const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+  if (str2 === "Male" || str2 === "Female" || str2 === "Kids") {
+    const res = await client.fetch(
+      `*[_type=="products" && category->title == "${str2}"]{
+        price,
+        _id,
+        title,
+        image,
+        subtitle,
+        category -> {
+          title,
+          _id
+        }
+      }`
+    );
+    return res;
+  } else {
+    const res = await client.fetch(`*[_type=="products"]{
+      price,
+      _id,
       title,
-      _id
-    }
-  }`);
-  return res;
+      image,
+      subtitle,
+      category -> {
+        title,
+        _id
+      }
+    }`);
+    return res;
+  }
 };
 
 interface IProduct {
@@ -30,9 +49,8 @@ interface IProduct {
   };
 }
 
-export default async function page() {
-  const data: IProduct[] = await getProductData();
-
+const page = async ({ params }: { params: { category: string } }) => {
+  const data: IProduct[] = await getProducts({ params });
   return (
     <div className="max-w-[1240px] w-full mx-auto">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
@@ -54,4 +72,6 @@ export default async function page() {
       </div>
     </div>
   );
-}
+};
+
+export default page;
